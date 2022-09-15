@@ -3,8 +3,6 @@
 
 char input[100];
 
-
-
 int getInput(void)
 {
     printf("\nType here: ");
@@ -13,8 +11,14 @@ int getInput(void)
 
 int main(void)
 {
+    struct locations windfang;
+    windfang.tag = "windfang";
+    windfang.description = "the first room of the house";
+
     printf("Welcome to the tour of my house!\n");
-    printf("\nYou are at the moment in %s.\n", getLocation(0));
-    while (getInput());
+    printf("\nYou are now in %s.\n", windfang.description);
+    while (getInput())
+        ;
+
     return 0;
 }

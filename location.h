@@ -1,6 +1,4 @@
 extern struct locations {
-    const char *description;
-    const char *tag;
-};
-
-char* getLocation(int nmbr);
+    char* tag;
+    char* description;
+} locations;
