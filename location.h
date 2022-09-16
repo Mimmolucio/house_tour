@@ -1,4 +1,3 @@
-extern struct locations {
-    char* tag;
-    char* description;
-} locations;
+char*  getLocation();
+
+void initializeWindfang();
