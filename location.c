@@ -1,5 +1,6 @@
 struct locations
 {
+        int   id;
         char* tag;
         char* description;
 };
@@ -17,3 +18,5 @@ char* getLocation()
 {
         return windfang.description;
 };
+
+

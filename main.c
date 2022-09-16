@@ -14,7 +14,8 @@ int main(void)
 
         initializeWindfang();
         printf("Welcome to the tour of my house!\n");
-        printf("\nYou are now in %s.\n", getLocation());
+        //printf("\nYou are now in %s.\n", getLocation());
+        printf("%s\n", windfang.description);
         while (getInput())
                 ;
 
