@@ -3,20 +3,17 @@ struct locations
         int   id;
         char* tag;
         char* description;
-};
-
-struct locations windfang;
-void initializeWindfang()
-{
-        windfang.tag = "windfang";
-        windfang.description = "first room of the house";
+}
+locs[] = {
+        {1, "windfang", "first room of the house"}
 };
 
 
 
-char* getLocation()
-{
-        return windfang.description;
-};
+
+//char* getLocation()
+//{
+//       return windfang.description;
+//};
 
 

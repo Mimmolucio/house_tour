@@ -12,10 +12,10 @@ int getInput(void)
 int main(void)
 {
 
-        initializeWindfang();
+//        initializeWindfang();
         printf("Welcome to the tour of my house!\n");
         //printf("\nYou are now in %s.\n", getLocation());
-        printf("%s\n", windfang.description);
+        printf("%s\n", locs[0].description);
         while (getInput())
                 ;
 
