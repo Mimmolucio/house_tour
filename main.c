@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "location.h"
+#include "parseAndExecute.h"
+#include "objects.h"
 
 char input[100];
 
@@ -11,13 +13,9 @@ int getInput(void)
 
 int main(void)
 {
-
-//        initializeWindfang();
-        printf("Welcome to the tour of my house!\n");
-        //printf("\nYou are now in %s.\n", getLocation());
-        printf("%s\n", locs[0].description);
-        while (getInput())
-                ;
-
+        printf("\nWelcome to the tour of my house!\n");
+        printf("\nYou are now in %s.\n", objs[2].location->description);
+        while (getInput() && parseAndExecute(input));
+        printf("\n\nBye\n\n");
         return 0;
 }

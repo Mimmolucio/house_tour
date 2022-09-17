@@ -1,19 +1,26 @@
+#include <stdio.h>
+#include "objects.h"
+
 struct locations
 {
-        int   id;
         char* tag;
         char* description;
 }
 locs[] = {
-        {1, "windfang", "first room of the house"}
+        {"windfang", "first room of the house"},
+        {"corridor", "the connecting room" },
+        {"toilet", "the guest bathroom"},
+        {"kitchen", "the spacious kitchen and dining room"},
+        {"living room", "the living room featuring a brown leather couch"},
+        {"office", "the tiny office"},
+        {"laundry room", "the room with the washing machine and the dryer"}
 };
 
 
 
-
-//char* getLocation()
-//{
-//       return windfang.description;
-//};
+void executeLook()
+{
+        printf("\nYou see that you are in %s.\n", objs[2].location->description);
+};
 
 
