@@ -9,6 +9,7 @@ struct objects
 objs[] = {
         {"keychain", "a small keychain containing the car key and the key to the house", windfang},
         {"sink", "a white ceramic sink below a mirror", toilet},
-        {"player", "yourself", windfang}
+        {"player", "yourself", windfang},
+        {"end", "end"}
 };
 
