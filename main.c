@@ -3,6 +3,7 @@
 #include "location.h"
 #include "parseAndExecute.h"
 #include "objects.h"
+#include "helpers.h"
 
 char input[100];
 
@@ -16,14 +17,8 @@ int main(void)
 {
         printf("\nWelcome to the tour of my house!\n");
 
-        int counter = 0;
-        int i = 0;
-        while (strcmp(objs[i].tag, "end") != 0)
-        {
-                counter++;
-                i++;
-        }
-        printf("%d Objects\n", counter);
+        
+        printf("%d objects\n", countObjects());
 
         printf("what: %s\n",objs[3].tag);
 

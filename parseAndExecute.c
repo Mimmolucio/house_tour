@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "location.h"
+#include "helpers.h"
 
 
 bool parseAndExecute(char* input) {

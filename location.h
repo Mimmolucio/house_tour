@@ -8,7 +8,7 @@
 
 char*  getLocation();
 
-void executeLook();
+
 
 extern struct locations
 {
